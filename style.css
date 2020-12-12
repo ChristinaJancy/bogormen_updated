@@ -464,6 +464,7 @@ max-width: 50%;
 	margin-left: auto;
   	margin-right: auto;
 	text-justify:inner-word;
+	padding-right:20px;
 }
 
 .product img{
