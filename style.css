@@ -1,0 +1,699 @@
+/*
+Theme Name: Bogormen theme
+Theme URI: 
+Author: Christina
+Author URI: 
+Description: Theme created for bogormen
+Version: 
+License: 
+*/
+
+
+/* header font */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+/* p font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*navigation*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/*--------------------------General styling-----------------------*/
+body, html{
+    background-color:#1C1D21;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	  box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+ 	header,
+  	section,
+	article,
+ 	aside,
+  	hgroup {
+      display: block;
+  }
+/*-------------------text styling------------------------------*/
+h1,
+h2,
+h3,
+h4{
+ font-family: 'Prata', serif;
+ color:#f2f2f2;
+    /* color: #F2F2F2; */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    /* color: #F2F2F2; */
+    font-size: 1rem;
+    color:#f2f2f2;
+}
+
+/*------------------------link---------------------------*/
+a {
+    color:#182628;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: rgba(1, 52, 65, 0.5);
+}
+
+
+/*---------------------------Grid/row/col - responsive------------------------------*/
+.row::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+	overflow: hidden;
+	clear: both;
+	
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+/*For mobile phones*/
+[class*="col-"] {
+  width: 100%;
+}
+
+
+
+/*--------------------------aside styling-----------------*/
+
+  .aside {
+    background-color: #f2f2f2;
+    padding: 15px;
+    color: #393939;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+
+/*--------------------------Header-----------------------------*/
+
+header{
+    background:#F2F2F2;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase; 
+	font-size: 1.3rem;
+}
+
+#logo a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+#logo img{
+	width: auto;
+	max-width: 120px;
+    height: auto;
+
+}
+
+header nav{
+    margin: 10px 0 0 0;
+	text-align: center;
+	padding: 0;
+	font-weight: bold;
+
+}
+
+nav ul {
+    list-style: none;
+	padding: 0;
+
+}
+
+#nav-fb {
+	height: 100%;
+	font-weight: bold;
+	position: relative;
+	padding: 25px 0;
+}
+
+#nav-fb a{
+	height: 10%;
+	position: absolute;
+	bottom: 0;
+	padding: 0;
+	float: left;
+}
+
+nav ul li {
+  	padding: 0 10px;
+    display: inline;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/*-------------------------banner-----------------------*/
+.banner{
+	padding: 50px;
+	width:100%;
+    text-align: center;
+    background-color: #f2f2f2;
+	color: #1C1d21;
+	margin: 0;
+}
+
+.banner h1, .banner h2, .banner p{
+	color: #1C1d21;
+}
+
+.sub-banner{
+	 text-align:center;
+}
+/*--------------------------Footer styling---------------------*/
+/* MOBILE NAV */
+
+.site-footer-mobile {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 60px;
+	color:#1c1d21;
+    background-color: rgba(245, 245, 245, 0.973);
+    display: none;
+    text-align: center;
+}
+
+.site-footer-mobile nav ul {
+    list-style: none;
+}
+
+.site-footer-mobile nav ul li {
+    margin: 0 8px;
+    /* display: inline; */
+    display: inline;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:#182628;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase; 
+}
+
+.site-footer-mobile nav ul li a {
+    text-decoration: none;
+}
+
+/* DESKTOP NAV */
+.site-footer-pc {
+    color:#F2F2F2;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_top p,
+#footer_top h3 {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+#footer_bottom {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+#footer_box {
+    border-right: 1px solid #F2F2F2;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#footer_box a i{
+	color:#f2f2f2;
+}
+#footer_box a {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 8px 0 0 12px;
+    color: #f2f2f2;
+    font-size: 2em;
+}
+
+#footer_box a:hover {
+    color: #999999;
+}
+
+#footer_box:not(:first-child) {
+    border-right: none;
+}
+
+#footer_text {
+    display: flex;
+    font-size: 9px;
+    margin-top: 15px;
+}
+
+#footer_text p {
+    flex: 1;
+	font-size: 9px;
+}
+
+#footer_text p:nth-child(2) {
+    text-align: center;
+}
+
+#footer_text p:nth-child(3) {
+    text-align: right;
+}
+
+
+
+
+
+/*------------------arcticle/post/FB feed-----------------------*/
+.cff-wrapper {
+    margin: 0;
+    display: flex;
+
+}
+
+.cff-wrapper p {
+    color: black;
+}
+
+#cff .cff-post-links a:first-child,
+.cff-share-container {
+    font-family: 'Comfortaa', cursive;
+}
+
+.cff-header {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 20% 0;
+    color: black;
+}
+
+/*------------------Home page------------------------*/
+
+.background{
+  	width: 100%;
+  	height: auto;
+	max-height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('https://favrskovonline.dk/wp-content/uploads/2020/03/bogormen-hadsten-cover.jpg');
+
+}
+
+#icons{
+	padding: 10px 0;
+}
+
+#icons img{
+max-height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+max-width: 50%;
+
+}
+.video{
+	max-width: 1400px;
+	 margin-left: auto;
+	margin-right: auto;
+
+
+}
+ .container-box {
+ 	margin-left: auto;
+	margin-right: auto;
+
+    /* width: 50%; */
+  }
+
+  .container-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+  .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+ .video-section{
+    padding: 20px;
+    text-align: center;
+    background-color: #F2F2F2;
+ }
+
+ .video-section h2{
+    text-align: center;
+    color:#1C1D21;
+ }
+
+
+/*---------------------products----------------------------*/
+.banner-products{
+	padding: 50px 50px 5px 50px;
+	width:100%;
+    text-align: center;
+    background-color: #f2f2f2;
+	color: #1C1d21;
+	margin: 0;
+}
+.banner-products h1{
+	color: #1C1d21;
+}
+
+.product img{
+  	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: auto;
+	max-width: 40%;
+	background-color: #f2f2f2;
+	padding: 10px;
+	max-width: 200px;
+}
+
+
+#products-tab{
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase; 
+	font-size: 1rem;
+	
+}
+
+#products-tab ul {
+    list-style: none;
+	padding: 0;
+}
+
+#products-tab ul li {
+  	padding: 0 10px;
+    display: inline;
+}
+
+#products-tab ul li a {
+    text-decoration: none;
+}
+
+#products{
+	margin-bottom: 150px;
+}
+
+/*--------------------------ABOUT US PAGE--------------------------------*/
+#about-img img{
+  	display: block;
+	float: right;
+ 	width: auto;
+	max-width: 100%;
+}
+
+ .text-box{
+	max-width: 500px;
+	float: left;
+ }
+
+  .mobile-only{
+      text-align:center;
+  }
+
+  .mobile-only h4{
+      background-color: #f2f2f2;
+      padding: 5px;
+      color: #1C1D21;
+	margin: 0 auto;
+  }
+.mobile-section{
+padding-bottom:100px;
+}
+  
+/*------------------------------CONTACT PAGE------------------------------------------*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	  font-family: 'Dosis', sans-serif;
+  
+  }
+  
+  input[type=submit] {
+    background-color: #408140;
+    color: #f2f2f2;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3f8543;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    background-color:#1C1D21;
+    padding: 10px;
+    font-family: 'Prata', serif;
+    color: #f2f2f2;
+  }
+  
+#contact-page{
+	margin-bottom:150px;
+}
+/*--------------------form-snackbar------------------------*/
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #1C1D21; /* Black background color */
+  color: #f2f2f2; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+  /*------------------------------FACEBOOK-------------------------------------*/
+
+  .fb-banner{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.fb-banner p, .fb-banner h2{
+    color:black;
+}
+
+
+/*------------------------media queries----------------------------*/
+
+/*max-width*/
+
+@media screen and (max-width: 900px){
+	    header {
+        display: none;
+    }
+	 .site-footer-mobile {
+        display: initial;
+    }
+
+    #footer_top p,
+    #footer_top h4 {
+        display: none;
+    }
+
+    .site-footer-pc {
+        display: none;
+    }
+
+    #footer_container {
+        display: none;
+    }
+
+    #footer_bottom {
+        display: none;
+    }
+
+    #footer_top {
+        display: none;
+    }
+
+    #footer_box {
+        display: none;
+    }
+
+    #footer_box a {
+        display: none;
+    }
+
+    #footer_text p {
+        display: none;
+    }
+		.background{
+		margin-bottom: 120px;
+
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container-box{
+		padding: 0;
+	}
+	#about-img img{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-box{
+		float:none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.site-footer-mobile nav ul li{
+
+		padding: 0;
+	}
+}
+/*min-width*/
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+		/*opening etc. on about page*/
+	.mobile-only{
+        display: none;
+      }
+}
+
