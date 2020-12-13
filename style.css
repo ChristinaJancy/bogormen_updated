@@ -126,6 +126,24 @@ a:active {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
+/*-----------------handelsbetingelser-----------------------*/
+.handelsbetingelser{
+  	max-width: 800px;
+	margin: 0 auto;
+	padding: 2px 50px;
+	margin-bottom: 60px;
+}
+
+.handelsbetingelser, .handelsbetingelser h2, .handelsbetingelser p{
+	background-color: #f2f2f2;
+	color: #1c1d21;
+	text-justify: inter-word;
+}
+
+.handelsbetingelser-footer{
+	text-align:center;
+	margin-bottom:-40px;
+}
 
 /*--------------------------Header-----------------------------*/
 
@@ -210,6 +228,7 @@ nav ul li a {
 /*--------------------------Footer styling---------------------*/
 /* MOBILE NAV */
 
+
 .site-footer-mobile {
     position: fixed;
     overflow: hidden;
@@ -249,6 +268,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
 }
+
 
 #footer_container {
     width: 90%;
@@ -451,9 +471,9 @@ max-width: 50%;
 
 }
 
-.product-container{
+/* .product-container{
 
-}
+} */
 
 .product{
 	height:250px;
@@ -676,6 +696,9 @@ input[type=text], select, textarea {
 		margin-bottom: 120px;
 
 	}
+		.pc-only{
+		display:none;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -693,6 +716,7 @@ input[type=text], select, textarea {
 		margin-right: auto;
 	}
 	
+
 		
 	.product{
 		width:100%;
@@ -735,6 +759,7 @@ input[type=text], select, textarea {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+	
 }
 
 @media only screen and (min-width: 768px) {

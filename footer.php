@@ -3,9 +3,13 @@
 
 <!------------------PC NAV----------------->
 <footer class="site-footer-pc">
-
 <div id="footer_container">
 <br><br><br><br><br><br><br><br><br>
+	<div class="row">
+	<div class="col-12 handelsbetingelser-footer">
+	<a href="<?php echo esc_url( home_url( '/handelsbetingelser' ) ); ?>"><h4>Handelsbetingelser</h4></a>
+			</div>
+			</div>
             <div id="footer_bottom">
                 <div id="footer_box">
                     <h4><?php the_field('pc-footer-col1-header'); ?></h4>
