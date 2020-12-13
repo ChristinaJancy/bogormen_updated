@@ -451,13 +451,13 @@ max-width: 50%;
 
 }
 
-/* .product-container{
+.product-container{
 
-} */
+}
 
 .product{
 	height:250px;
-	width: 50%;
+	width: 40%;
 	display: block;
 	background-color:#f2f2f2;
 	margin-left: auto;
@@ -474,7 +474,7 @@ max-width: 50%;
   	width: auto;
 	height:auto;
 	max-height: 120px;
-	filter: drop-shadow(0.15rem 0.15rem 1.5px #1c1d2169);
+	filter: drop-shadow(0.20rem 0.20rem 3px #1c1d2169);
 }
 
 .product-col1, .product-col2{
