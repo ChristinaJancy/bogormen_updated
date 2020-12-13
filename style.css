@@ -451,45 +451,50 @@ max-width: 50%;
 
 }
 
-.product-container{
-	height: auto;
-	width:auto;
-}
+/* .product-container{
+
+} */
 
 .product{
-	height: auto;
-	width:50%;
+	height:250px;
+	width: 50%;
 	display: block;
 	background-color:#f2f2f2;
 	margin-left: auto;
   	margin-right: auto;
 	text-justify:inner-word;
-	padding-right:20px;
+	border-radius:2%;
+
 }
 
 .product img{
   	display: block;
  	margin-left: auto;
   	margin-right: auto;
-  	width: 100%;
-	height: auto;
-	max-width: 150px;
-	filter: drop-shadow(0.15rem 0.15rem 2px #1c1d2169);
+  	width: auto;
+	height:auto;
+	max-height: 120px;
+	filter: drop-shadow(0.15rem 0.15rem 1.5px #1c1d2169);
+}
+
+.product-col1, .product-col2{
+margin-top:8%;
+	
 }
 
 .product-col1 p{
 	color: #1c1d21;
-	padding:0 5px;
 	text-align:center;
 }
 
 .product-col2 p{
 	color: #1c1d21;
-	padding:0 5px;
 	text-align:left;
+	text-justify:left;
 }
 .product-col2{
 	padding-top:10%;
+
 }
 
 
@@ -620,6 +625,12 @@ input[type=text], select, textarea {
 /*------------------------media queries----------------------------*/
 
 /*max-width*/
+@media screen and (max-width: 1200px){
+	.product{
+	width: 80%;
+
+}
+}
 
 @media screen and (max-width: 900px){
 	    header {
@@ -685,24 +696,27 @@ input[type=text], select, textarea {
 		
 	.product{
 		width:100%;
+		height:auto;
 	}
 	
-	.product-container{
-	height: 100%;
-	width:100%;
+	.product img{
+			max-height: 150px;
+		
 	}
 	
 	.product p{
 		text-align:center;
+		padding:0;
 	}
 	.product-col2{
 	padding-top: 0;
+	padding-right: 0;
+	margin: 0;
 }
 }
 
 @media screen and (max-width: 400px){
 	.site-footer-mobile nav ul li{
-
 		padding: 0;
 	}
 }
