@@ -251,7 +251,7 @@ nav ul li a {
     /* display: inline; */
     display: inline;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     color:#182628;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase; 
@@ -471,9 +471,6 @@ max-width: 50%;
 
 }
 
-/* .product-container{
-
-} */
 
 .product{
 	height:250px;
@@ -739,9 +736,17 @@ input[type=text], select, textarea {
 }
 }
 
+
+@media screen and (max-width: 460px){
+	.site-footer-mobile nav ul li{
+			padding: 0;
+	}
+	
+	
+}
 @media screen and (max-width: 400px){
 	.site-footer-mobile nav ul li{
-		padding: 0;
+		font-size: 0.7rem;
 	}
 }
 /*min-width*/
